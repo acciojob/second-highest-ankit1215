@@ -1,5 +1,5 @@
 function secondHighest() {
-  let n = Number(prompt()); // number of inputs
+  let n = Number(prompt());
 
   if (n <= 1) {
     alert(-Infinity);
@@ -20,12 +20,8 @@ function secondHighest() {
     }
   }
 
-  if (second === -Infinity) {
-    alert(-Infinity);
-  } else {
-    alert(second);
-  }
+  alert(second === -Infinity ? -Infinity : second);
 }
 
-// REQUIRED: CALL THE FUNCTION so Cypress sees the alert
+// REQUIRED: function call
 secondHighest();
